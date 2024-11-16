@@ -1,0 +1,8 @@
+import math
+ 
+a = float(input("Введите сторону a: "))
+b = float(input("Введите сторону b: "))
+c = float(input("Введите сторону c: "))
+ 
+bisector = math.sqrt(a * b * (a + b + c) * (a + b - c)) / (a + b)
+print(f"Длина биссектрисы: {bisector:.2f}")
